@@ -1,0 +1,82 @@
+================================================================================
+HOW TO PUSH TO GITHUB & DEPLOY TO VERCEL
+================================================================================
+
+STEP 1: Download the portfolio folder from outputs, then open Terminal/CMD
+
+STEP 2: Navigate to the portfolio folder
+   cd path/to/portfolio
+
+STEP 3: Create GitHub repo
+   - Go to github.com and sign in
+   - Click "+" top right → "New repository"
+   - Name: "portfolio" (or your choice)
+   - DO NOT check "Initialize with README"
+   - Click "Create repository"
+   - Copy the URL (looks like: https://github.com/YOUR-USERNAME/portfolio.git)
+
+STEP 4: Push your code to GitHub
+   git branch -M main
+   git remote add origin https://github.com/YOUR-USERNAME/portfolio.git
+   git push -u origin main
+   
+   (Paste YOUR ACTUAL repo URL from Step 3)
+
+STEP 5: Deploy to Vercel
+   - Go to vercel.com and sign in with GitHub
+   - Click "New Project"
+   - Select your "portfolio" repo
+   - Click "Deploy"
+   - Wait ~1 minute
+   - Your site is live at: your-project.vercel.app
+
+================================================================================
+WHAT'S FIXED IN THIS VERSION
+================================================================================
+
+✓ Grid background now appears on AYCE calculator page
+✓ Green emerald grid with subtle glow (matches portfolio aesthetic)
+✓ Grid fades toward center for less visual noise
+✓ AYCE "KARLEATSALOT" brand links back to index.html (portfolio home)
+✓ Ready to push to GitHub as-is
+
+================================================================================
+EDIT AFTER DEPLOYMENT
+================================================================================
+
+After your site is live on Vercel:
+
+1. Make changes to any HTML/CSS/JS file
+2. Commit & push to GitHub:
+   git add .
+   git commit -m "Description of changes"
+   git push
+
+3. Vercel auto-redeploys in ~1 minute
+
+No manual deployment needed — it's fully automated.
+
+================================================================================
+CUSTOMIZE BEFORE PUSHING
+================================================================================
+
+Edit these placeholders in the files:
+
+- index.html:
+  - [YOUR NAME] → your actual name
+  - [YOUR INTRO] → your bio
+  - [Your City] → your location
+  - [AGENCY NAME] → your studio/business name
+  - you@example.com → your real email
+
+- agency.html:
+  - [AGENCY NAME] → your studio name
+  - $X,XXX → real service pricing
+  - you@example.com → your email
+
+Social links in footer:
+  - github.com/ → your GitHub
+  - x.com/ → your Twitter/X
+  - linkedin.com/ → your LinkedIn
+
+================================================================================

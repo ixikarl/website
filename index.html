@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YOUR NAME — Portfolio</title>
+<meta name="description" content="Portfolio, tools, and studio work by [Your Name].">
+<script>
+  (function() {
+    try {
+      var stored = localStorage.getItem('theme');
+      var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+      document.documentElement.setAttribute('data-theme', stored || (prefersLight ? 'light' : 'dark'));
+    } catch (e) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-brand">your<span class="dot">.</span>name</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Index</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#tools">Workbench</a></li>
+    <li><a href="agency.html">Studio</a></li>
+    <li><a href="agency.html#contact">Contact</a></li>
+  </ul>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode"></button>
+</nav>
+
+<main class="container">
+
+  <section id="home" class="hero">
+    <div class="section-marker reveal">
+      <span class="num">01</span>
+      <span class="name">Index</span>
+      <span class="rule"></span>
+    </div>
+    <h1 class="reveal reveal-delay-1">
+      I build <em>useful things</em><br>
+      on the internet.
+    </h1>
+    <p class="lead reveal reveal-delay-2">
+      [YOUR INTRO — 2 or 3 sentences. Who you are, what you make, what you care about. Be specific. Avoid "passionate about technology."]
+    </p>
+    <div class="meta reveal reveal-delay-2">
+      <div class="meta-item">
+        <span class="label">Based</span>
+        <span class="value">[Your City]</span>
+      </div>
+      <div class="meta-item">
+        <span class="label">Status</span>
+        <span class="value" style="color: var(--accent);">● Taking projects</span>
+      </div>
+      <div class="meta-item">
+        <span class="label">Focus</span>
+        <span class="value">Web · Tools · Studio</span>
+      </div>
+    </div>
+    <div class="cta-row reveal reveal-delay-3">
+      <a href="#tools" class="btn primary">See the work →</a>
+      <a href="agency.html#contact" class="btn">Get in touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-marker reveal">
+      <span class="num">02</span>
+      <span class="name">About</span>
+      <span class="rule"></span>
+    </div>
+    <div class="about-grid">
+      <div class="about-bio reveal">
+        <p>[PARAGRAPH 1 — who you are, how you got here, the through-line of what you do.]</p>
+        <p>[PARAGRAPH 2 — what kind of work you like, who you want to work with, what you'll say no to.]</p>
+      </div>
+      <div class="skills-block reveal reveal-delay-1">
+        <span class="label">— Stack &amp; Skills</span>
+        <ul class="skills-list">
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>Node</li>
+          <li>Python</li>
+          <li>Tailwind</li>
+          <li>Figma</li>
+          <li>Postgres</li>
+          <li>Three.js</li>
+          <li>Webflow</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools">
+    <div class="section-marker reveal">
+      <span class="num">03</span>
+      <span class="name">Workbench / Fun Projects</span>
+      <span class="rule"></span>
+    </div>
+    <div class="tools-grid">
+      <a href="ayce-calculator.html" class="tool-card reveal">
+        <div class="index">001 / 2025 · Live</div>
+        <h3>All-You-Can-Eat <em>Calculator</em></h3>
+        <p>Tells you whether the buffet is a steal or a scam. Punch in the numbers, get a verdict with attitude.</p>
+        <div class="tags">
+          <span class="tag">Web</span><span class="tag">·</span>
+          <span class="tag">JavaScript</span><span class="tag">·</span>
+          <span class="tag">Tool</span>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+      <a href="coming-soon.html" class="tool-card reveal reveal-delay-1">
+        <div class="index">002 / 2025 · WIP</div>
+        <h3>Next <em>Experiment</em></h3>
+        <p>A second fun project in progress. Replace this card with the real description once it ships.</p>
+        <div class="tags">
+          <span class="tag">In progress</span>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="studio-teaser">
+    <div class="section-marker reveal">
+      <span class="num">04</span>
+      <span class="name">Studio</span>
+      <span class="rule"></span>
+    </div>
+    <div class="studio-teaser reveal">
+      <div>
+        <h3>Building <em>websites</em> for people who'd rather not.</h3>
+        <p>[AGENCY NAME] is the studio side of what I do — small, practical websites for founders and small businesses. Fast, well-designed, no jargon.</p>
+      </div>
+      <a href="agency.html" class="btn primary">See the studio →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <a href="index.html" class="footer-sig">your<span class="dot">.</span>name</a>
+      <div class="footer-links">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://x.com/" target="_blank" rel="noopener">X ↗</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="mailto:you@example.com">Email ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 — built by hand on graph paper</span>
+      <a href="#home">↑ Back to top</a>
+    </div>
+  </div>
+</footer>
+
+<div class="coords" id="coords">X 0000 · Y 0000</div>
+
+<script src="app.js"></script>
+</body>
+</html>
